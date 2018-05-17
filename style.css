@@ -7,52 +7,87 @@
 
 #container{
 	height: 740px;
-	width: 1300px;
 }
 #top{
 	height: 200px;
-	width: 1280px;
 	background-color: #b3b3b3;
 	margin-bottom: 10px;
 }
 #body{
 	height: 310px;
-	width: 1280px;
 	background-color: #cccccc;
 	margin-bottom: 10px;
 }
 #bottom{
 	height: 200px;
-	width: 1280px;
 	background-color: #ff9;
 }
 .title{
-	font-size: 90px;
+	font-size: 80px;
 	font-family: arial;
 	padding-top: 30px;
 	margin-left: 25px;
 }
-.paragrapgh1{
+.paragraph1{
 	font-family: arial;
-	font-size: 35px;
+	font-size: 30px;
 	padding-top: 25px;
 	padding-left: 20px;
 }
-.paragrapgh4{
+.paragraph2{
 	font-family: arial;
 	font-size: 20px;
 	padding-top: 25px;
 	padding-left: 20px;
-
 }
+.paragraph3{
+	font-family: arial;
+	font-size: 20px;
+	padding-top: 25px;
+	padding-left: 20px;
+}
+.paragraph4{
+	font-family: arial;
+	font-size: 20px;
+	padding-top: 25px;
+	padding-left: 20px;
+}
+
 @media only screen and (max-width: 480px){
 	.sm-4{
 		width: 100%;
 	}
+	.paragraph3{
+		display: none;
+	}
+	.paragraph2{
+		display: none;
+	}
+}
+@media only screen and (min-width: 481px){
 	.md-4{
 		width: 100%;
+		display: block;
 	}
+	.paragraph4{
+		display: none;
+	}
+	.paragraph2{
+		display: none;
+	}
+}
+@media only screen and (min-width: 1024px){
 	.lg-4{
 		width: 100%
+		display: block;
+	}
+	.paragraph3{
+		display: none;
+	}
+	.paragraph4{
+		display: none;
+	}
+	.paragraph2{
+		display: block;
 	}
 }
